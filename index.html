@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💪 Atividade: Criando Formulário de Cadastro</title>
+  </head>
+  <body>
+    <!--
+      A tag <div/> será usada para agrupar labels e inputs.  
+      A tag <br/> será usada para quebrar linhas, porém o correto, 
+      quando se trata de layout(posicionamento na tela) é fazer isso por meio do 
+      CSS(Cascading Style Sheets), aprenderemos como como fazer isso mais adiante
+    -->
+    <form>
+      <div>
+        <label for="name">Nome</label>
+        <br />
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Digite seu nome aqui..."
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Digite seu email aqui.."
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="description">O que te motivou participar do evento?</label>
+        <br />
+        <textarea
+          name="description"
+          id="description"
+          placeholder="Descreva aqui..."
+          cols="30"
+          rows="5"
+        ></textarea>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="module">Selecione seu módulo</label>
+        <br />
+        <select name="module" id="module" required>
+          <option value="" selected disabled>Escolher módulo</option>
+          <option value="m1">Módulo 1</option>
+          <option value="m2">Módulo 2</option>
+          <option value="m3">Módulo 3</option>
+          <option value="m4">Módulo 4</option>
+          <option value="m5">Módulo 5</option>
+          <option value="m6">Módulo 6</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="password">Cadastre uma senha</label>
+        <br />
+        <input
+          name="password"
+          type="password"
+          placeholder="Digite sua senha aqui..."
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="password-confirm">Confirme a senha</label>
+        <br />
+        <input
+          id="password-confirm"
+          name="password-confirm"
+          type="password"
+          placeholder="Repita a senha..."
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <p>Deseja receber novidades em seu email?</p>
+
+        <label for="newsletter">Sim</label>
+        <input type="radio" id="newsletter" name="newsletter" value="yes" />
+
+        <label for="no-newsletter">Não</label>
+        <input type="radio" id="no-newsletter" name="newsletter" value="no" />
+      </div>
+
+      <br />
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>
